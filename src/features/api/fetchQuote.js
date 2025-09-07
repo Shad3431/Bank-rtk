@@ -1,10 +1,6 @@
-export const PUT_QUOTE = "PUT_QUOTE";
 
-export const putQuote = quote => ({
-    type: PUT_QUOTE,
-    payload: quote
-})
 
+import {putQuote} from "../quote/quoteSlice.js";
 
 export const fetchQuote = () =>{
     return dispatch => {
