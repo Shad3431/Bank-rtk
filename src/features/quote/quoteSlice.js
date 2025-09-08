@@ -4,7 +4,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const quoteSlice = createSlice({
     name:'quote',
-    initialState:"",
+    initialState:"Winter is coming ...",
     reducers:{
         putQuote: (state, action) => action.payload
     }

@@ -6,7 +6,7 @@ const balanceSlice = createSlice({
     initialState:0,
     reducers:{
         deposit: (state, action) => state+action.payload,
-        withdraw: (state,action) => state-action.payload
+        withdraw: (state,action) => state-action.payload < 0 ? state:state-action.payload
     }
 })
 export const {deposit,withdraw}=balanceSlice.actions
